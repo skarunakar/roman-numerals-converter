@@ -44,4 +44,4 @@ const ConversionReferenceChart = () => {
     </div>)
 
 }
-export default ConversionReferenceChart;
+export default React.memo(ConversionReferenceChart);

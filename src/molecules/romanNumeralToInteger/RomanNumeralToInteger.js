@@ -12,12 +12,15 @@ class RomanNumeralToInteger extends Component {
         errorMessage: ''
     };
 
-    handleChange = (romanNumeral = '') => {
-        const formattedInteger = fromRoman(romanNumeral);
-        if (!formattedInteger) {
-            return this.setState({ errorMessage: 'Enter Valid Roman Numeral', formattedInteger: '' })
+    handleChange = (romanNumeral) => {
+        if (romanNumeral) {
+            const integer = fromRoman(romanNumeral);
+            if (!integer) {
+                return this.setState({ errorMessage: 'Enter Valid Roman Numeral', formattedInteger: '' })
+            }
+            this.setState({ formattedInteger: integer.toString(), errorMessage: '' });
         }
-        this.setState({ formattedInteger, errorMessage: '' });
+        this.setState({ errorMessage: '' });
     }
 
     render() {

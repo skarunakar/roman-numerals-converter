@@ -1,6 +1,7 @@
 html {
   font-size: 10px;
   margin: 0;
+  background-color: #FFFFF0;
 }
 .app {
   text-align: center;
@@ -9,8 +10,12 @@ html {
   margin: 2rem;
   align-items: center;
   text-align: center;
+  font-family: bubblegum-regular;
 }
 
+h1 {
+  font-size: 4rem;
+}
 .converterCardContainer {
   display: flex;
   justify-content: center;

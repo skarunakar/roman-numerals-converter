@@ -2,10 +2,10 @@ import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import style from './converterCard.module.scss';
 
-const ConverterCard = (props = {}) => {
+const ConverterCard = (props) => {
     const { onChange } = props;
 
-    const handleInputChange = useCallback((event = {}) => {
+    const handleInputChange = useCallback((event) => {
         const inputValue = event.target.value;
         onChange(inputValue);
     }, [onChange])
@@ -22,7 +22,7 @@ const ConverterCard = (props = {}) => {
             <div className={style.title}>{title}</div>
             <input onChange={handleInputChange}></input>
             <div className={`${style.errorText} ${errorClassName}`}>{error}</div>
-            <div className={style.displaytext}>{value}</div>
+            <div className={style.displayText}>{value}</div>
         </div>
     )
 }
@@ -33,6 +33,7 @@ ConverterCard.propTypes = {
     onChange: PropTypes.func,
     value: PropTypes.string,
     error: PropTypes.string,
+    errorClassName: PropTypes.string,
 };
 
 ConverterCard.defaultProps = {
@@ -41,5 +42,6 @@ ConverterCard.defaultProps = {
     onChange: () => { },
     value: '',
     error: '',
+    errorClassName: '',
 };
 export default ConverterCard;

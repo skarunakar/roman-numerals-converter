@@ -11,3 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face { font-family: flavours-regular; src: url('assets/fonts/Flavors-Regular.ttf'); } 
+@font-face { font-family: whale-regular; src: url('assets/fonts/WhaleITriedRegular.ttf'); } 
+@font-face { font-family: bubblegum-regular; src: url('assets/fonts/BubblegumSans-Regular.ttf'); } 

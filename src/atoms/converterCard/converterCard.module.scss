@@ -1,6 +1,6 @@
 .cardContainer {
-    width: 22rem;
-    height: 21rem;
+    width: 26rem;
+    height: 26rem;
     border-radius: 1.4rem;
     border: 1px solid black;
     display: flex;
@@ -13,14 +13,25 @@
 input {
     height: 3.2rem;
     width: 10rem;
-    margin: 2rem 0;
+    margin: 2rem 0 0.2rem 0;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: bubblegum-regular;
 }
 
 .title {
-   // font-family: ;
+   font-size: 2.4rem;
 
 }
 
-.errorText, .displayText {
+.errorText {
     height: 1.7rem;
+    margin: 0.5rem 0 4.5rem;
+    color: #c2185b;
+}
+
+.displayText {
+    height: 3.2rem;
+    font-size: 3.2rem;
+    color: #00695c;
 }

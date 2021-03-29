@@ -9,7 +9,7 @@ const ROMAN_INTEGER_MAP = {
     'M': 1000,
 };
 
-function fromRoman(inputToConvert = '') {
+function fromRoman(inputToConvert) {
     const romanNumeral = inputToConvert.toUpperCase();
     if (!isValidRomanNumeral(romanNumeral)) {
         return undefined;
@@ -24,7 +24,6 @@ function fromRoman(inputToConvert = '') {
         }
         computedInteger = computedInteger + integerEqv;
         prevComputed = integerEqv;
-        i++;
     }
     return computedInteger;
 }

@@ -3,22 +3,25 @@
  font-size: 1.7rem;
 }
 
+table {
+    border: 0.1rem solid black;
+    border-radius: 1.4rem;
+}
+
 td, th {
     min-width: 10rem;
     text-align: center;
 }
 
 tr {
-    height: 6rem;
+    height: 6.8rem;
 }
 tr:nth-child(odd){
     background-color: #fdd835;
-    color: #ad1457;
-    border: 1rem solid #ad1457;
+    color: #000000;
 }
 
-tr:nth-child(even){
-    background-color: #ad1457;
-    color: #fdd835;
-    border: 1rem solid #fdd835;
+th, tr:nth-child(even){
+    background-color: #ffc1d3;
+    color: #000000;
 }

@@ -14,7 +14,7 @@ class IntegerToRomanNumeral extends Component {
 
     handleChange = (inputValue) => {
         const formattedRomanNumeral = toRoman(inputValue);
-        if (!formattedRomanNumeral) {
+        if (!formattedRomanNumeral && inputValue) {
             return this.setState({ errorMessage: 'Enter Number between 0 and 3999', formattedRomanNumeral: '' })
         }
         this.setState({ formattedRomanNumeral, errorMessage: '' });
