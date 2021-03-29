@@ -2,19 +2,19 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+#### Live Demo
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/25717783/112909049-48177a80-910e-11eb-8099-a034e10606e7.gif)
+
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
-
+#### `yarn start`
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### `yarn test`
+Runs test
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### `yarn test -- --coverage`
+Runs test with coverage
