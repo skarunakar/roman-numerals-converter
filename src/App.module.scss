@@ -1,0 +1,17 @@
+html {
+  font-size: 10px;
+  margin: 0;
+}
+.app {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.converterCardContainer {
+  display: flex;
+  justify-content: center;
+}
